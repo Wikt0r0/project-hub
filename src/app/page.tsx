@@ -116,36 +116,38 @@ export default function HomePage() {
         </Link>
       </section>
 
-      <section className="mt-16">
-        <div className="mb-8 flex items-end justify-between gap-4">
-          <div>
-            <h2 className="font-serif text-3xl font-semibold tracking-tight">
-              Updates
-            </h2>
-            <p className="mt-1 text-sm text-[var(--fg-muted)]">
-              Short notes, photos, and things worth remembering.
-            </p>
+      {sortedUpdates.length > 0 && (
+        <section className="mt-16">
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <div>
+              <h2 className="font-serif text-3xl font-semibold tracking-tight">
+                Updates
+              </h2>
+              <p className="mt-1 text-sm text-[var(--fg-muted)]">
+                Short notes, photos, and things worth remembering.
+              </p>
+            </div>
+            <span className="text-xs uppercase tracking-wider text-[var(--fg-muted)]">
+              {sortedUpdates.length} entries
+            </span>
           </div>
-          <span className="text-xs uppercase tracking-wider text-[var(--fg-muted)]">
-            {sortedUpdates.length} entries
-          </span>
-        </div>
 
-        <ol className="relative flex flex-col gap-8 border-l border-[var(--border)] pl-6 sm:pl-8">
-          {sortedUpdates.map((u) => (
-            <li key={u.id} id={u.id} className="relative scroll-mt-24">
-              <span
-                aria-hidden
-                className="absolute -left-[27px] top-7 inline-flex h-3 w-3 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)] sm:-left-[35px]"
-              />
-              <span className="absolute -left-[80px] top-7 hidden text-xs uppercase tracking-wider text-[var(--fg-muted)] sm:block">
-                {formatDate(u.date).split(",")[0]}
-              </span>
-              <UpdateCard update={u} />
-            </li>
-          ))}
-        </ol>
-      </section>
+          <ol className="relative flex flex-col gap-8 border-l border-[var(--border)] pl-6 sm:pl-8">
+            {sortedUpdates.map((u) => (
+              <li key={u.id} id={u.id} className="relative scroll-mt-24">
+                <span
+                  aria-hidden
+                  className="absolute -left-[27px] top-7 inline-flex h-3 w-3 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)] sm:-left-[35px]"
+                />
+                <span className="absolute -left-[80px] top-7 hidden text-xs uppercase tracking-wider text-[var(--fg-muted)] sm:block">
+                  {formatDate(u.date).split(",")[0]}
+                </span>
+                <UpdateCard update={u} />
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
     </div>
   );
 }

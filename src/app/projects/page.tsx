@@ -4,6 +4,8 @@ import { updates } from "@/lib/updates";
 import { SearchableCatalog } from "@/components/SearchableCatalog";
 import { profile } from "@/lib/profile";
 
+const totalTags = new Set(projects.flatMap((p) => p.tags)).size;
+
 export const metadata: Metadata = {
   title: "Projects",
   description: `Every project ${profile.name} has shipped, plus what's in flight.`,
@@ -31,8 +33,7 @@ export default function ProjectsPage() {
           </span>
           <span className="h-1 w-1 rounded-full bg-[var(--fg-muted)]" />
           <span>
-            <strong className="text-[var(--fg)]">{updates.length}</strong>{" "}
-            updates
+            <strong className="text-[var(--fg)]">{totalTags}</strong> tags
           </span>
         </div>
       </section>

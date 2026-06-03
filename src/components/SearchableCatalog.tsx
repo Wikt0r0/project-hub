@@ -102,7 +102,7 @@ export function SearchableCatalog({ projects, updates }: Props) {
           <input
             ref={inputRef}
             type="search"
-            placeholder="Search projects, tags, life updates…"
+            placeholder="Search projects, tags…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full bg-transparent text-base outline-none placeholder:text-[var(--fg-muted)]"

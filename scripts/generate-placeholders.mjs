@@ -140,12 +140,6 @@ const items = [
   ["projects/tntrest/01.svg", "tntrest-01", "Explore page"],
   ["projects/tntrest/02.svg", "tntrest-02", "Creative design page"],
   ["projects/tntrest/03.svg", "tntrest-03", "Fashion trends page"],
-
-  // Updates
-  ["updates/2026-05-28/01.svg", "update-meetup", "IoT meetup"],
-  ["updates/2026-04-02/01.svg", "update-japan-1", "Torii gate"],
-  ["updates/2026-04-02/02.svg", "update-japan-2", "Bowl of ramen"],
-  ["updates/2025-12-31/01.svg", "update-bread", "Sourdough loaf"],
 ];
 
 for (const [path, seed, label] of items) {
