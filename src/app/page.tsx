@@ -14,17 +14,15 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
       <section className="fade-in flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-8">
-        <figure className="relative w-40 flex-none overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elev)] shadow-sm sm:w-56">
-          <div className="relative aspect-[4/3]">
-            <Image
-              src={profile.hero.src}
-              alt={profile.hero.alt}
-              fill
-              priority
-              sizes="(min-width: 640px) 224px, 160px"
-              className="object-cover"
-            />
-          </div>
+        <figure className="relative aspect-square w-36 flex-none overflow-hidden rounded-full border border-[var(--border)] bg-[var(--bg-elev)] shadow-sm sm:w-44">
+          <Image
+            src={profile.hero.src}
+            alt={profile.hero.alt}
+            fill
+            priority
+            sizes="(min-width: 640px) 176px, 144px"
+            className="object-cover object-[28%_28%]"
+          />
         </figure>
 
         <div className="flex flex-col gap-2">
