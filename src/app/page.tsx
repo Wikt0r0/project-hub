@@ -116,22 +116,28 @@ export default function HomePage() {
         </Link>
       </section>
 
-      {sortedUpdates.length > 0 && (
-        <section className="mt-16">
-          <div className="mb-8 flex items-end justify-between gap-4">
-            <div>
-              <h2 className="font-serif text-3xl font-semibold tracking-tight">
-                Updates
-              </h2>
-              <p className="mt-1 text-sm text-[var(--fg-muted)]">
-                Short notes, photos, and things worth remembering.
-              </p>
-            </div>
-            <span className="text-xs uppercase tracking-wider text-[var(--fg-muted)]">
-              {sortedUpdates.length} entries
-            </span>
+      <section className="mt-16">
+        <div className="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <h2 className="font-serif text-3xl font-semibold tracking-tight">
+              Updates
+            </h2>
+            <p className="mt-1 text-sm text-[var(--fg-muted)]">
+              Short notes, photos, and things worth remembering.
+            </p>
           </div>
+          <span className="text-xs uppercase tracking-wider text-[var(--fg-muted)]">
+            {sortedUpdates.length} entries
+          </span>
+        </div>
 
+        {sortedUpdates.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-elev)] p-10 text-center">
+            <p className="text-[var(--fg-muted)]">
+              Nothing here yet — check back soon.
+            </p>
+          </div>
+        ) : (
           <ol className="relative flex flex-col gap-8 border-l border-[var(--border)] pl-6 sm:pl-8">
             {sortedUpdates.map((u) => (
               <li key={u.id} id={u.id} className="relative scroll-mt-24">
@@ -146,8 +152,8 @@ export default function HomePage() {
               </li>
             ))}
           </ol>
-        </section>
-      )}
+        )}
+      </section>
     </div>
   );
 }
