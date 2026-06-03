@@ -28,7 +28,7 @@ export function Header() {
             </svg>
           </span>
           <span>
-            Project <span className="text-[var(--accent)]">HUB</span>
+            My Project <span className="text-[var(--accent)]">HUB</span>
           </span>
         </Link>
 

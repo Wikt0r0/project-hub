@@ -19,13 +19,13 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Project HUB",
-    template: "%s · Project HUB",
+    default: "My Project HUB",
+    template: "%s · My Project HUB",
   },
   description:
     "A catalog of the things I build, and short updates from my life.",
   openGraph: {
-    title: "Project HUB",
+    title: "My Project HUB",
     description:
       "A catalog of the things I build, and short updates from my life.",
     type: "website",

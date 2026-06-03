@@ -12,7 +12,7 @@ export default function HomePage() {
           {profile.name}&rsquo;s catalog
         </span>
         <h1 className="font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-          Project <span className="text-[var(--accent)]">HUB</span>
+          My Project <span className="text-[var(--accent)]">HUB</span>
         </h1>
         <p className="max-w-2xl text-lg text-[var(--fg-muted)] sm:text-xl">
           A catalog of every project I&rsquo;ve shipped, the things I&rsquo;m

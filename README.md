@@ -1,4 +1,4 @@
-# Project HUB
+# My Project HUB
 
 A personal catalog for every project you ship, with a built-in "About me" section
 for short life updates with photos. Static, serverless, and easy to host

@@ -1,7 +1,7 @@
 export const profile = {
   name: "Wiktor Olborski",
   tagline: "Builder, traveler, and perpetual learner.",
-  bio: "Welcome to my Project HUB — a living catalog of the things I build, break, and ship. From weekend hacks to long-running passion projects, you'll find them all here, along with short updates about what's happening in my life.",
+  bio: "Welcome to My Project HUB — a living catalog of the things I build, break, and ship. From weekend hacks to long-running passion projects, you'll find them all here, along with short updates about what's happening in my life.",
   location: "Earth",
   email: "hello@example.com",
   socials: [

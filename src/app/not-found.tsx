@@ -16,7 +16,7 @@ export default function NotFound() {
         href="/"
         className="mt-4 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
       >
-        Back to Project HUB
+        Back to My Project HUB
       </Link>
     </div>
   );
