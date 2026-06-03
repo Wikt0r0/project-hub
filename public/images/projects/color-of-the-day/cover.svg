@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Color of the Day">
+  <defs>
+    <linearGradient id="g-1t9l9rq" gradientTransform="rotate(214)">
+      <stop offset="0%" stop-color="#a13cff" />
+      <stop offset="60%" stop-color="#cf94ff" />
+      <stop offset="100%" stop-color="#ecd9ff" />
+    </linearGradient>
+    <filter id="blur-g-1t9l9rq" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-1t9l9rq)" />
+  <g filter="url(#blur-g-1t9l9rq)"><circle cx="253" cy="990" r="180" fill="#ecd9ff" opacity="0.54" /><circle cx="1409" cy="975" r="308" fill="#ecd9ff" opacity="0.39" /><circle cx="633" cy="601" r="226" fill="#ecd9ff" opacity="0.53" /><circle cx="926" cy="145" r="517" fill="#cf94ff" opacity="0.41" /><circle cx="604" cy="900" r="547" fill="#cf94ff" opacity="0.32" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Color of the Day</text>
+</svg>

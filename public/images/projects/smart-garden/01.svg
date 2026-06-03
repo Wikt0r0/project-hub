@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Prototype on the table">
+  <defs>
+    <linearGradient id="g-1e312bc" gradientTransform="rotate(40)">
+      <stop offset="0%" stop-color="#ffb800" />
+      <stop offset="60%" stop-color="#ffd866" />
+      <stop offset="100%" stop-color="#fff1c2" />
+    </linearGradient>
+    <filter id="blur-g-1e312bc" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-1e312bc)" />
+  <g filter="url(#blur-g-1e312bc)"><circle cx="832" cy="534" r="281" fill="#ffd866" opacity="0.38" /><circle cx="83" cy="356" r="658" fill="#fff1c2" opacity="0.19" /><circle cx="1036" cy="157" r="512" fill="#fff1c2" opacity="0.49" /><circle cx="23" cy="943" r="266" fill="#fff1c2" opacity="0.54" /><circle cx="1056" cy="812" r="613" fill="#ffd866" opacity="0.47" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Prototype on the table</text>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Smart Garden">
+  <defs>
+    <linearGradient id="g-v9rzay" gradientTransform="rotate(328)">
+      <stop offset="0%" stop-color="#3c83ff" />
+      <stop offset="60%" stop-color="#88b8ff" />
+      <stop offset="100%" stop-color="#dbe7ff" />
+    </linearGradient>
+    <filter id="blur-g-v9rzay" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-v9rzay)" />
+  <g filter="url(#blur-g-v9rzay)"><circle cx="716" cy="567" r="221" fill="#3c83ff" opacity="0.43" /><circle cx="406" cy="150" r="148" fill="#88b8ff" opacity="0.21" /><circle cx="106" cy="499" r="396" fill="#88b8ff" opacity="0.28" /><circle cx="359" cy="855" r="409" fill="#dbe7ff" opacity="0.45" /><circle cx="1285" cy="277" r="565" fill="#3c83ff" opacity="0.27" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Smart Garden</text>
+</svg>

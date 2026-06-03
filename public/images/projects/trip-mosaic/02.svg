@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Masonry grid">
+  <defs>
+    <linearGradient id="g-jd7oci" gradientTransform="rotate(182)">
+      <stop offset="0%" stop-color="#3c83ff" />
+      <stop offset="60%" stop-color="#88b8ff" />
+      <stop offset="100%" stop-color="#dbe7ff" />
+    </linearGradient>
+    <filter id="blur-g-jd7oci" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-jd7oci)" />
+  <g filter="url(#blur-g-jd7oci)"><circle cx="1248" cy="842" r="544" fill="#dbe7ff" opacity="0.32" /><circle cx="266" cy="346" r="635" fill="#dbe7ff" opacity="0.31" /><circle cx="598" cy="843" r="599" fill="#dbe7ff" opacity="0.46" /><circle cx="114" cy="627" r="434" fill="#88b8ff" opacity="0.49" /><circle cx="1149" cy="847" r="327" fill="#3c83ff" opacity="0.47" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Masonry grid</text>
+</svg>
