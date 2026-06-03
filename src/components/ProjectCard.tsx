@@ -9,7 +9,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <Link
         href={`/projects/${project.slug}`}
         aria-label={`View ${project.title}`}
-        className="absolute inset-0 z-0 rounded-2xl focus-visible:outline-2 focus-visible:outline-[var(--accent)]"
+        className="absolute inset-0 z-10 rounded-2xl focus-visible:outline-2 focus-visible:outline-[var(--accent)]"
       />
 
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-[var(--bg)]">
@@ -21,13 +21,13 @@ export function ProjectCard({ project }: { project: Project }) {
           className="object-cover transition duration-500 group-hover:scale-[1.03]"
         />
         {project.status && (
-          <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur">
+          <span className="absolute left-3 top-3 z-20 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur">
             {statusLabel(project.status)}
           </span>
         )}
       </div>
 
-      <div className="relative flex flex-1 flex-col gap-3 p-5">
+      <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-center justify-between gap-3 text-xs text-[var(--fg-muted)]">
           <span>{formatDate(project.date)}</span>
           <span className="truncate">
@@ -59,7 +59,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </span>
 
           {project.links && project.links.length > 0 && (
-            <span className="relative z-10 flex items-center gap-1.5">
+            <span className="relative z-20 flex items-center gap-1.5">
               {project.links.map((l) => (
                 <a
                   key={l.url}
