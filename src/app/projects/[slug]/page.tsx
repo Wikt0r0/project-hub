@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { allProjectSlugs, getProject, projects } from "@/lib/projects";
 import { formatDate, statusLabel } from "@/lib/format";
-import { ProjectGallery } from "@/components/ProjectGallery";
+import { ProjectStory } from "@/components/ProjectStory";
 
 type Params = { slug: string };
 
@@ -148,10 +148,10 @@ export default async function ProjectPage({
 
       {project.photos.length > 0 && (
         <section className="mt-16">
-          <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-[var(--fg-muted)]">
-            Gallery
+          <h2 className="mb-8 text-sm font-semibold uppercase tracking-wider text-[var(--fg-muted)]">
+            Story
           </h2>
-          <ProjectGallery photos={project.photos} />
+          <ProjectStory photos={project.photos} />
         </section>
       )}
 

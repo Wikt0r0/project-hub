@@ -1,7 +1,10 @@
 export type Photo = {
   src: string;
   alt: string;
+  /** Short heading shown above the photo in story mode. */
   caption?: string;
+  /** Longer paragraph shown alongside the photo in story mode. */
+  description?: string;
 };
 
 export type Project = {
