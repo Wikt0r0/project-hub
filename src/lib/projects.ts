@@ -14,7 +14,7 @@ export const projects: Project[] = [
     date: "2025-12-18",
     status: "completed",
     links: [
-      { label: "Source", url: "https://github.com/wiktorolborski/MetalMorphosis" },
+      { label: "Source", url: "https://github.com/Wikt0r0/MetalMorphosis" },
     ],
     goal:
       "Document an ISU class about metals end-to-end — from theory (force, pressure, density) all the way to the final regenerative build — so the process and reasoning are visible, not just the result.",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     date: "2026-03-20",
     status: "in-progress",
     links: [
-      { label: "Source", url: "https://github.com/wiktorolborski/makerbloom" },
+      { label: "Source", url: "https://github.com/Wikt0r0/makerbloom" },
     ],
     goal:
       "Stop losing track of which print used which filament, layer height, and tweaks. Make my own catalog so each print has a permanent home and I can link friends to a single design.",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     date: "2025-09-10",
     status: "completed",
     links: [
-      { label: "Source", url: "https://github.com/wiktorolborski/website-poc" },
+      { label: "Source", url: "https://github.com/Quiet-Net/website-poc" },
     ],
     goal:
       "Turn a class research project on noise pollution into something the public could actually read — short, visual, and easy to navigate on a phone.",
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     date: "2026-01-22",
     status: "completed",
     links: [
-      { label: "Source", url: "https://github.com/wiktorolborski/save-the-soil" },
+      { label: "Source", url: "https://github.com/Wikt0r0/save-the-soil" },
     ],
     goal:
       "Make the case for soil health in a few minutes of reading. No giant essays — just punchy sections you can click through.",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
     date: "2026-04-18",
     status: "in-progress",
     links: [
-      { label: "Source", url: "https://github.com/wiktorolborski/roblox-farm" },
+      { label: "Source", url: "https://github.com/Wikt0r0/roblox-farm" },
     ],
     goal:
       "Build a Roblox game the way I build any other software — version-controlled, linted, formatted, with dependencies managed in a manifest — not by drag-and-dropping inside Studio.",
