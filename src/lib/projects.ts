@@ -128,8 +128,8 @@ export const projects: Project[] = [
     summary:
       "A short, snappy awareness site about soil health — what NPK actually means, why soil is alive, what kills it, and what you can do to help save it.",
     cover: {
-      src: "/images/projects/save-the-soil/cover.svg",
-      alt: "Save The Soil cover",
+      src: "/images/projects/save-the-soil/landing.jpg",
+      alt: "Save The Soil landing page — bold uppercase wordmark on a soft green background scattered with trees and leaves",
     },
     tags: ["Awareness", "React", "Vite", "Tailwind"],
     date: "2026-01-22",
@@ -150,6 +150,13 @@ export const projects: Project[] = [
     results:
       "Live React + Vite + Tailwind SPA with six bite-sized sections behind a single menu. The two pages that travel best when shared are 'Soil is Alive' (one teaspoon of healthy soil contains more living organisms than there are people on Earth) and 'Soil ≠ Dirt' (dirt is just soil that's in the wrong place — cut off from its ecosystem, it stops being a productive member of society).",
     photos: [
+      {
+        src: "/images/projects/save-the-soil/landing.jpg",
+        alt: "Save The Soil landing page screenshot",
+        caption: "The landing page",
+        description:
+          "Bold, uppercase wordmark on a soft green background scattered with trees and leaves. One single MENU button below it — every other page lives behind that one click. The campaign feel is intentional: no header, no nav, no clutter, just the message and a way in.",
+      },
       {
         src: "/images/projects/save-the-soil/cover.svg",
         alt: "Soil is alive — chapter cover",
