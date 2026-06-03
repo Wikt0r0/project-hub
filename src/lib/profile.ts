@@ -8,8 +8,9 @@ export const profile = {
     { label: "GitHub", url: "https://github.com" },
     { label: "LinkedIn", url: "https://linkedin.com" },
   ],
-  avatar: {
-    src: "/images/avatar.svg",
-    alt: "Portrait illustration",
+  hero: {
+    src: "/images/profile/me-and-alpaca.png",
+    alt: "Wiktor smiling next to a curious white alpaca on a stone path in front of a forested hillside",
+    caption: "Saying hi to Alpaca No. 08.",
   },
 };
