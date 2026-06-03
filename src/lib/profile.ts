@@ -6,7 +6,6 @@ export const profile = {
   email: "wiktor.olborski@gmail.com",
   socials: [
     { label: "GitHub", url: "https://github.com" },
-    { label: "LinkedIn", url: "https://linkedin.com" },
   ],
   hero: {
     src: "/images/profile/me-and-alpaca.png",
