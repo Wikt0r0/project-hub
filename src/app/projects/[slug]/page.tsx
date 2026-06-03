@@ -123,22 +123,24 @@ export default async function ProjectPage({
         />
       </div>
 
-      <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-3">
+      <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-x-16">
+        <div className="lg:col-span-2 lg:row-span-2">
+          <Section title="Plan">
+            <ol className="flex flex-col gap-3 text-[var(--fg)]">
+              {project.plan.map((step, i) => (
+                <li key={i} className="flex gap-3 prose-body">
+                  <span className="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[var(--accent)] text-xs font-semibold text-white">
+                    {i + 1}
+                  </span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          </Section>
+        </div>
+
         <Section title="Goal">
           <p className="prose-body text-[var(--fg)]">{project.goal}</p>
-        </Section>
-
-        <Section title="Plan">
-          <ol className="flex flex-col gap-3 text-[var(--fg)]">
-            {project.plan.map((step, i) => (
-              <li key={i} className="flex gap-3 prose-body">
-                <span className="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[var(--accent)] text-xs font-semibold text-white">
-                  {i + 1}
-                </span>
-                <span>{step}</span>
-              </li>
-            ))}
-          </ol>
         </Section>
 
         <Section title="Results">
