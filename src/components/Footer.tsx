@@ -14,13 +14,13 @@ export function Footer() {
             href="/"
             className="text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
           >
-            Projects
+            About
           </Link>
           <Link
-            href="/about"
+            href="/projects"
             className="text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
           >
-            About
+            Projects
           </Link>
           {profile.socials.map((s) => (
             <a

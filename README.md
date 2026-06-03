@@ -108,8 +108,8 @@ Run `npm run build` and serve the `out/` directory. The site is fully static.
 src/
   app/
     layout.tsx                # site shell, theme bootstrap, fonts
-    page.tsx                  # home: hero + search + project grid
-    about/page.tsx            # about + life updates timeline
+    page.tsx                  # landing: about me + life updates timeline
+    projects/page.tsx         # project catalog with search
     projects/[slug]/page.tsx  # project detail page
     not-found.tsx             # 404
   components/

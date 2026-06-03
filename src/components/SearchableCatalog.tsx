@@ -165,7 +165,7 @@ export function SearchableCatalog({ projects, updates }: Props) {
             {filteredUpdates.map((u) => (
               <li key={u.id}>
                 <Link
-                  href={`/about#${u.id}`}
+                  href={`/#${u.id}`}
                   className="flex items-start gap-4 p-4 transition hover:bg-[var(--bg)]"
                 >
                   {u.photos?.[0] ? (

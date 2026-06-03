@@ -39,7 +39,7 @@ export default async function ProjectPage({
   return (
     <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
       <Link
-        href="/"
+        href="/projects"
         className="inline-flex items-center gap-1.5 text-sm text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
       >
         <svg
@@ -157,7 +157,7 @@ export default async function ProjectPage({
 
       <nav className="mt-16 flex items-center justify-between border-t border-[var(--border)] pt-8">
         <Link
-          href="/"
+          href="/projects"
           className="text-sm text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
         >
           ← All projects

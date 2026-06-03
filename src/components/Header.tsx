@@ -33,8 +33,8 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center gap-1 sm:gap-2">
-          <NavLink href="/">Projects</NavLink>
-          <NavLink href="/about">About</NavLink>
+          <NavLink href="/">About</NavLink>
+          <NavLink href="/projects">Projects</NavLink>
           <ThemeToggle />
         </nav>
       </div>
