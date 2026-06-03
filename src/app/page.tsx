@@ -13,23 +13,18 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <section className="fade-in flex flex-col gap-8">
-        <figure className="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--bg-elev)] shadow-sm">
-          <div className="relative aspect-[4/3] w-full sm:aspect-[16/10]">
+      <section className="fade-in flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-8">
+        <figure className="relative w-40 flex-none overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elev)] shadow-sm sm:w-56">
+          <div className="relative aspect-[4/3]">
             <Image
               src={profile.hero.src}
               alt={profile.hero.alt}
               fill
               priority
-              sizes="(min-width: 768px) 768px, 100vw"
+              sizes="(min-width: 640px) 224px, 160px"
               className="object-cover"
             />
           </div>
-          {profile.hero.caption && (
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent px-5 py-4 text-sm text-white">
-              {profile.hero.caption}
-            </figcaption>
-          )}
         </figure>
 
         <div className="flex flex-col gap-2">
@@ -40,6 +35,11 @@ export default function HomePage() {
             {profile.name}
           </h1>
           <p className="text-lg text-[var(--fg-muted)]">{profile.tagline}</p>
+          {profile.hero.caption && (
+            <p className="text-sm italic text-[var(--fg-muted)]">
+              {profile.hero.caption}
+            </p>
+          )}
         </div>
       </section>
 
