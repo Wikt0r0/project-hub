@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Creative design page">
+  <defs>
+    <linearGradient id="g-4kx1do" gradientTransform="rotate(191)">
+      <stop offset="0%" stop-color="#5a4cff" />
+      <stop offset="60%" stop-color="#9d92ff" />
+      <stop offset="100%" stop-color="#dcd6ff" />
+    </linearGradient>
+    <filter id="blur-g-4kx1do" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-4kx1do)" />
+  <g filter="url(#blur-g-4kx1do)"><circle cx="56" cy="926" r="532" fill="#5a4cff" opacity="0.56" /><circle cx="1204" cy="853" r="162" fill="#9d92ff" opacity="0.41" /><circle cx="221" cy="982" r="190" fill="#5a4cff" opacity="0.25" /><circle cx="1388" cy="252" r="206" fill="#5a4cff" opacity="0.20" /><circle cx="68" cy="598" r="506" fill="#9d92ff" opacity="0.47" /><circle cx="1373" cy="848" r="402" fill="#5a4cff" opacity="0.29" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Creative design page</text>
+</svg>

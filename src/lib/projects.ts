@@ -2,145 +2,266 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    slug: "smart-garden",
-    title: "Smart Garden Monitor",
+    slug: "metalmorphosis",
+    title: "MetalMorphosis",
     summary:
-      "An ESP32-powered greenhouse monitor that tracks soil moisture, light, and temperature and pings me on Telegram when my plants need help.",
+      "A six-week Green School ISU class on metals: forging, magnetism, electricity, and a final regenerative build — a working metal detector — documented week by week on a static site.",
     cover: {
-      src: "/images/projects/smart-garden/cover.svg",
-      alt: "A small greenhouse with sensors inside",
+      src: "/images/projects/metalmorphosis/cover.jpg",
+      alt: "Metal-detector prototype on a workshop bench",
     },
-    tags: ["IoT", "ESP32", "Python", "Hardware"],
-    date: "2026-04-12",
+    tags: ["School", "Hardware", "HTML/CSS", "Documentation"],
+    date: "2025-12-18",
     status: "completed",
     links: [
-      { label: "Source code", url: "https://github.com" },
-      { label: "Write-up", url: "https://example.com" },
+      { label: "Source", url: "https://github.com/wiktorolborski/MetalMorphosis" },
     ],
     goal:
-      "Keep my balcony herbs alive while traveling by getting a single notification when something is off — not a dashboard I'd never look at.",
+      "Document an ISU class about metals end-to-end — from theory (force, pressure, density) all the way to the final regenerative build — so the process and reasoning are visible, not just the result.",
     plan: [
-      "Pick low-power sensors that survive humidity (capacitive soil, BME280, BH1750).",
-      "Wire everything to an ESP32 and stream readings to a tiny FastAPI service.",
-      "Run rolling averages and only alert when a threshold is breached for >30 minutes.",
-      "Ship daily summaries to Telegram instead of yet another mobile app.",
+      "Week 1 — Force & pressure, mechanical properties, simple machines.",
+      "Week 2 — Metals: density, conductivity, magnetism; hands-on element tests.",
+      "Weeks 3–4 — Casting, alloys, electricity and electromagnetism.",
+      "Weeks 5–6 — Design and build a regenerative metal detector from discarded parts.",
+      "Ship a static site with weekly progress, photos, and the final write-up.",
     ],
     results:
-      "Six months in, zero dead plants and roughly two alerts per week. The biggest surprise was how much the morning-vs-evening light delta mattered — I moved the basil and it doubled in size.",
+      "Working metal detector built from salvaged components, plus a full multi-week site documenting how each piece of theory fed into the build. Held up as a model for how to write up project-based learning at the school.",
     photos: [
       {
-        src: "/images/projects/smart-garden/01.svg",
-        alt: "Sensors wired to a breadboard",
-        caption: "First prototype on the kitchen table.",
+        src: "/images/projects/metalmorphosis/diagram.jpg",
+        alt: "Diagram of the metal detector circuit",
+        caption: "Initial circuit & build diagram.",
       },
       {
-        src: "/images/projects/smart-garden/02.svg",
-        alt: "Greenhouse with sensors installed",
-        caption: "Installed in the balcony greenhouse.",
+        src: "/images/projects/metalmorphosis/w1_1.jpg",
+        alt: "Week 1 hands-on activity",
+        caption: "Week 1 — testing mechanical properties.",
       },
       {
-        src: "/images/projects/smart-garden/03.svg",
-        alt: "Telegram alert on a phone",
-        caption: "The only UI I actually use.",
+        src: "/images/projects/metalmorphosis/week2.jpg",
+        alt: "Week 2 metal testing",
+        caption: "Week 2 — density tests by water displacement.",
+      },
+      {
+        src: "/images/projects/metalmorphosis/week3.jpg",
+        alt: "Week 3 workshop",
+        caption: "Week 3 — casting & alloys.",
+      },
+      {
+        src: "/images/projects/metalmorphosis/week4.jpg",
+        alt: "Week 4 electricity practical",
+        caption: "Week 4 — electricity & electromagnetism.",
+      },
+      {
+        src: "/images/projects/metalmorphosis/week5.jpg",
+        alt: "Week 5 build progress",
+        caption: "Week 5 — assembling the detector.",
+      },
+      {
+        src: "/images/projects/metalmorphosis/week6.jpg",
+        alt: "Week 6 finished detector",
+        caption: "Week 6 — final regenerative build.",
       },
     ],
   },
   {
-    slug: "trip-mosaic",
-    title: "Trip Mosaic",
+    slug: "makerbloom",
+    title: "Maker Bloom 3D",
     summary:
-      "A static site generator that turns a folder of holiday photos and a tiny YAML file into a fast, beautiful travel diary.",
+      "A clean, fast catalog for my 3D-printed designs — every print gets a page with photos, filament, and notes on what worked and what didn't.",
     cover: {
-      src: "/images/projects/trip-mosaic/cover.svg",
-      alt: "Collage of travel photos",
+      src: "/images/projects/makerbloom/cover.png",
+      alt: "Maker Bloom 3D hero illustration",
     },
-    tags: ["Static site", "TypeScript", "Photography"],
-    date: "2026-02-03",
+    tags: ["3D Printing", "React", "TypeScript", "Vite"],
+    date: "2026-03-20",
     status: "in-progress",
+    links: [
+      { label: "Source", url: "https://github.com/wiktorolborski/makerbloom" },
+    ],
     goal:
-      "Stop losing my travel memories in camera-roll archives. Make publishing a trip feel like drag-and-drop, not deployment.",
+      "Stop losing track of which print used which filament, layer height, and tweaks. Make my own catalog so each print has a permanent home and I can link friends to a single design.",
     plan: [
-      "Define a minimal trip.yaml schema (title, days, captions).",
-      "Auto-generate masonry layouts from EXIF orientation + dominant color.",
-      "Ship as a CLI that outputs a static site I can host anywhere.",
-      "Optional map view that traces the route from photo GPS metadata.",
+      "React + TypeScript + Vite for a small, fast SPA.",
+      "Catalog seeded from a typed data file (no CMS, no DB).",
+      "Per-print pages with photos, filament, layer height, and notes.",
+      "Featured flag + categories to surface my favorites.",
     ],
     results:
-      "Currently published three trips with it. The EXIF-driven dominant color sorting accidentally became my favorite feature — albums feel curated even when they're not.",
+      "Live catalog with the first batch of prints (drawer inserts, lamp mount, knob set). The typed data model made it trivial to add new entries from my phone after a print finishes.",
     photos: [
       {
-        src: "/images/projects/trip-mosaic/01.svg",
-        alt: "Map showing a trip route",
-        caption: "Auto-generated route map from photo GPS.",
+        src: "/images/projects/makerbloom/logo.png",
+        alt: "Maker Bloom 3D logo",
+        caption: "Brand mark.",
       },
       {
-        src: "/images/projects/trip-mosaic/02.svg",
-        alt: "Masonry photo grid",
-        caption: "Masonry grid sorted by dominant color.",
+        src: "/images/projects/makerbloom/cover.png",
+        alt: "Hero image",
+        caption: "Hero on the landing page.",
       },
     ],
   },
   {
-    slug: "focus-timer",
-    title: "Focus Timer for Deep Work",
+    slug: "quiet-net",
+    title: "Quiet Net",
     summary:
-      "A menu-bar Pomodoro that hides notifications, dims my second monitor, and journals what I worked on — no cloud, no account.",
+      "An awareness site about noise pollution: what causes it, why it's bad for you, and what we can actually do about it.",
     cover: {
-      src: "/images/projects/focus-timer/cover.svg",
-      alt: "Menu bar timer screenshot",
+      src: "/images/projects/quiet-net/cover.png",
+      alt: "Quiet Net logo",
     },
-    tags: ["macOS", "Swift", "Productivity"],
-    date: "2025-11-19",
+    tags: ["Awareness", "React", "TypeScript", "CRA"],
+    date: "2025-09-10",
     status: "completed",
-    links: [{ label: "Download", url: "https://example.com" }],
+    links: [
+      { label: "Source", url: "https://github.com/wiktorolborski/website-poc" },
+    ],
     goal:
-      "Replace a Pomodoro app that kept growing features I didn't want. I just need 25 minutes of quiet and a one-line journal at the end.",
+      "Turn a class research project on noise pollution into something the public could actually read — short, visual, and easy to navigate on a phone.",
     plan: [
-      "Native SwiftUI menu-bar app — no Electron.",
-      "Hook into macOS Focus modes instead of building yet another DND system.",
-      "Append a one-line note to a plain markdown file at the end of each session.",
+      "React + TypeScript scaffold via CRA.",
+      "Four content sections: About, Noise Sources, Health Effects, Noise Reduction.",
+      "Side menu navigation that works on mobile.",
+      "Deploy as a static site to Netlify.",
     ],
     results:
-      "Down to a 1.4 MB app that I open every morning. The markdown log turned into a surprisingly nice weekly reflection ritual.",
+      "Shipped to Netlify and shown in class. The clearest takeaway was how few people knew about non-auditory effects of chronic noise — that page got the most time on it by far.",
     photos: [
       {
-        src: "/images/projects/focus-timer/01.svg",
-        alt: "Menu bar showing the timer",
-        caption: "Lives in the menu bar, out of the way.",
+        src: "/images/projects/quiet-net/icon.svg",
+        alt: "Quiet Net icon",
+        caption: "Favicon and identity mark.",
       },
       {
-        src: "/images/projects/focus-timer/02.svg",
-        alt: "Markdown journal entries",
-        caption: "Daily log appended to a single .md file.",
+        src: "/images/projects/quiet-net/cover.png",
+        alt: "Quiet Net cover",
+        caption: "Landing page hero.",
       },
     ],
   },
   {
-    slug: "color-of-the-day",
-    title: "Color of the Day",
+    slug: "save-the-soil",
+    title: "Save The Soil",
     summary:
-      "A daily generative artwork derived from weather, sunrise time, and a seeded noise field — printed and pinned to my wall.",
+      "A short, snappy awareness site about soil health — what NPK actually means, why soil is alive, and what you can do to keep it that way.",
     cover: {
-      src: "/images/projects/color-of-the-day/cover.svg",
-      alt: "Generative gradient artwork",
+      src: "/images/projects/save-the-soil/cover.svg",
+      alt: "Save The Soil cover",
     },
-    tags: ["Generative", "Art", "Canvas"],
-    date: "2025-08-07",
-    status: "in-progress",
+    tags: ["Awareness", "React", "Vite", "Tailwind"],
+    date: "2026-01-22",
+    status: "completed",
+    links: [
+      { label: "Source", url: "https://github.com/wiktorolborski/save-the-soil" },
+    ],
     goal:
-      "Have a daily creative ritual that doesn't depend on inspiration — just inputs from the world plus a deterministic algorithm.",
+      "Make the case for soil health in a few minutes of reading. No giant essays — just punchy sections you can click through.",
     plan: [
-      "Pull weather + sunrise time at 6am each day.",
-      "Seed a noise field and render a 2000×2000 gradient on canvas.",
-      "Auto-post the result to a private feed and pick the best ones for print.",
+      "React + Vite + Tailwind for a fast iteration loop.",
+      "Six bite-sized pages: facts, NPK, soil-alive, soil-die, soil-not-dirt, help.",
+      "A simple menu page that ties them together.",
+      "Bright, uppercase typography to make it feel like a campaign.",
     ],
     results:
-      "About 200 pieces so far. Twelve are on my wall. Rainy mornings always make the best gradients, which I did not expect.",
+      "Live single-page app with six readable sub-pages. The 'soil is not dirt' page became the one I send to people first — it reframes the whole conversation.",
     photos: [
       {
-        src: "/images/projects/color-of-the-day/01.svg",
-        alt: "Wall covered in printed gradients",
-        caption: "Wall of favorites, printed at home.",
+        src: "/images/projects/save-the-soil/01.svg",
+        alt: "Landing page",
+        caption: "Landing — bold uppercase wordmark.",
+      },
+      {
+        src: "/images/projects/save-the-soil/02.svg",
+        alt: "NPK section",
+        caption: "NPK explainer.",
+      },
+      {
+        src: "/images/projects/save-the-soil/03.svg",
+        alt: "Soil is alive section",
+        caption: "Why soil is alive.",
+      },
+    ],
+  },
+  {
+    slug: "roblox-farm",
+    title: "Roblox Farm",
+    summary:
+      "A farming game for Roblox — Rojo-synced Luau project with a proper toolchain (Selene, StyLua, Wally) instead of editing inside Studio.",
+    cover: {
+      src: "/images/projects/roblox-farm/cover.svg",
+      alt: "Roblox Farm cover",
+    },
+    tags: ["Game", "Roblox", "Lua", "Tooling"],
+    date: "2026-04-18",
+    status: "in-progress",
+    links: [
+      { label: "Source", url: "https://github.com/wiktorolborski/roblox-farm" },
+    ],
+    goal:
+      "Build a Roblox game the way I build any other software — version-controlled, linted, formatted, with dependencies managed in a manifest — not by drag-and-dropping inside Studio.",
+    plan: [
+      "Foreman to install the dev tools (Rojo, Selene, StyLua) reproducibly.",
+      "Rojo to sync source files between VS Code and Roblox Studio.",
+      "Wally for package management (when needed).",
+      "Start small: a tilled-soil grid, a few crops, and a basic day cycle.",
+    ],
+    results:
+      "Project scaffolded and synced cleanly to Studio. The toolchain alone has made iteration feel night-and-day better than editing in Studio.",
+    photos: [
+      {
+        src: "/images/projects/roblox-farm/01.svg",
+        alt: "World layout placeholder",
+        caption: "Early world layout sketch.",
+      },
+      {
+        src: "/images/projects/roblox-farm/02.svg",
+        alt: "Rojo and Studio integration",
+        caption: "Rojo syncing to Roblox Studio.",
+      },
+    ],
+  },
+  {
+    slug: "tntrest",
+    title: "TNT Rest",
+    summary:
+      "A tiny Express server I keep running locally as a sandbox for static page experiments — fashion trends, creative design, explore pages.",
+    cover: {
+      src: "/images/projects/tntrest/cover.svg",
+      alt: "TNT Rest cover",
+    },
+    tags: ["Express", "Node.js", "Web", "Sandbox"],
+    date: "2025-10-05",
+    status: "in-progress",
+    links: [
+      { label: "Source", url: "https://github.com/wiktorolborski/tntrest" },
+    ],
+    goal:
+      "Have a permanent local URL where I can prototype static pages without spinning up a new repo each time. Boringly reliable, always on.",
+    plan: [
+      "Express serves /public as static files.",
+      "A landing index that links to whatever experiment is current.",
+      "Drop new HTML pages into /public to add them — no build step.",
+      "Use port 3000 so the URL never changes.",
+    ],
+    results:
+      "Three live experiments right now (Explore, Creative Design, Fashion Trends). It's become my default 'paste any HTML here and look at it' tool.",
+    photos: [
+      {
+        src: "/images/projects/tntrest/01.svg",
+        alt: "Explore page",
+        caption: "Explore — gradient hero layout test.",
+      },
+      {
+        src: "/images/projects/tntrest/02.svg",
+        alt: "Creative design page",
+        caption: "Creative design experiment.",
+      },
+      {
+        src: "/images/projects/tntrest/03.svg",
+        alt: "Fashion trends page",
+        caption: "Fashion trends mock.",
       },
     ],
   },

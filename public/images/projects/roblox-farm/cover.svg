@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Roblox Farm">
+  <defs>
+    <linearGradient id="g-14yq348" gradientTransform="rotate(169)">
+      <stop offset="0%" stop-color="#0ea5b7" />
+      <stop offset="60%" stop-color="#6dd3df" />
+      <stop offset="100%" stop-color="#cdeef3" />
+    </linearGradient>
+    <filter id="blur-g-14yq348" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-14yq348)" />
+  <g filter="url(#blur-g-14yq348)"><circle cx="1552" cy="231" r="233" fill="#6dd3df" opacity="0.21" /><circle cx="692" cy="414" r="475" fill="#cdeef3" opacity="0.36" /><circle cx="27" cy="707" r="189" fill="#6dd3df" opacity="0.23" /><circle cx="1134" cy="173" r="623" fill="#0ea5b7" opacity="0.51" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Roblox Farm</text>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="TNT Rest">
+  <defs>
+    <linearGradient id="g-1iar1hd" gradientTransform="rotate(349)">
+      <stop offset="0%" stop-color="#a13cff" />
+      <stop offset="60%" stop-color="#cf94ff" />
+      <stop offset="100%" stop-color="#ecd9ff" />
+    </linearGradient>
+    <filter id="blur-g-1iar1hd" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-1iar1hd)" />
+  <g filter="url(#blur-g-1iar1hd)"><circle cx="919" cy="567" r="600" fill="#ecd9ff" opacity="0.24" /><circle cx="190" cy="463" r="603" fill="#cf94ff" opacity="0.27" /><circle cx="1375" cy="66" r="477" fill="#a13cff" opacity="0.49" /><circle cx="66" cy="341" r="284" fill="#cf94ff" opacity="0.50" /><circle cx="455" cy="843" r="371" fill="#a13cff" opacity="0.28" /><circle cx="1531" cy="372" r="199" fill="#a13cff" opacity="0.25" /><circle cx="1272" cy="573" r="491" fill="#cf94ff" opacity="0.32" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">TNT Rest</text>
+</svg>

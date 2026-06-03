@@ -124,25 +124,22 @@ function write(relPath, content) {
 const items = [
   ["avatar.svg", "avatar", "avatar"],
 
-  // Smart Garden
-  ["projects/smart-garden/cover.svg", "smart-garden-cover", "Smart Garden"],
-  ["projects/smart-garden/01.svg", "smart-garden-01", "Prototype on the table"],
-  ["projects/smart-garden/02.svg", "smart-garden-02", "Installed in greenhouse"],
-  ["projects/smart-garden/03.svg", "smart-garden-03", "Telegram alert"],
+  // Save The Soil — green/earth theme placeholders
+  ["projects/save-the-soil/cover.svg", "save-the-soil-cover", "Save The Soil"],
+  ["projects/save-the-soil/01.svg", "save-the-soil-01", "Landing page"],
+  ["projects/save-the-soil/02.svg", "save-the-soil-02", "NPK section"],
+  ["projects/save-the-soil/03.svg", "save-the-soil-03", "Soil is alive"],
 
-  // Trip Mosaic
-  ["projects/trip-mosaic/cover.svg", "trip-mosaic-cover", "Trip Mosaic"],
-  ["projects/trip-mosaic/01.svg", "trip-mosaic-01", "Route map"],
-  ["projects/trip-mosaic/02.svg", "trip-mosaic-02", "Masonry grid"],
+  // Roblox Farm — game placeholders
+  ["projects/roblox-farm/cover.svg", "roblox-farm-cover", "Roblox Farm"],
+  ["projects/roblox-farm/01.svg", "roblox-farm-01", "World layout"],
+  ["projects/roblox-farm/02.svg", "roblox-farm-02", "Rojo + Studio"],
 
-  // Focus Timer
-  ["projects/focus-timer/cover.svg", "focus-timer-cover", "Focus Timer"],
-  ["projects/focus-timer/01.svg", "focus-timer-01", "Menu bar"],
-  ["projects/focus-timer/02.svg", "focus-timer-02", "Journal entries"],
-
-  // Color of the Day
-  ["projects/color-of-the-day/cover.svg", "color-cover", "Color of the Day"],
-  ["projects/color-of-the-day/01.svg", "color-01", "Printed wall"],
+  // TNT Rest — server / showcase placeholders
+  ["projects/tntrest/cover.svg", "tntrest-cover", "TNT Rest"],
+  ["projects/tntrest/01.svg", "tntrest-01", "Explore page"],
+  ["projects/tntrest/02.svg", "tntrest-02", "Creative design page"],
+  ["projects/tntrest/03.svg", "tntrest-03", "Fashion trends page"],
 
   // Updates
   ["updates/2026-05-28/01.svg", "update-meetup", "IoT meetup"],
