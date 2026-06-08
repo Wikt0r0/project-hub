@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Soil is alive">
+  <defs>
+    <linearGradient id="g-1w1wt30" gradientTransform="rotate(47)">
+      <stop offset="0%" stop-color="#5a4cff" />
+      <stop offset="60%" stop-color="#9d92ff" />
+      <stop offset="100%" stop-color="#dcd6ff" />
+    </linearGradient>
+    <filter id="blur-g-1w1wt30" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g-1w1wt30)" />
+  <g filter="url(#blur-g-1w1wt30)"><circle cx="1154" cy="426" r="217" fill="#dcd6ff" opacity="0.49" /><circle cx="947" cy="55" r="156" fill="#5a4cff" opacity="0.43" /><circle cx="845" cy="408" r="608" fill="#dcd6ff" opacity="0.56" /><circle cx="434" cy="848" r="402" fill="#9d92ff" opacity="0.41" /></g>
+  <rect width="100%" height="100%" fill="black" opacity="0.05" />
+  <text x="64" y="950" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="600" fill="white" opacity="0.75">Soil is alive</text>
+</svg>
